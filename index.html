@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta name="keywords" content="포트폴리오">
+  <meta name="description" content="포트폴리오"/>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="포트폴리오">
+  <meta property="og:description" content="포트폴리오">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="포트폴리오">
+  <meta property="og:locale" content="ko">
+
+  <!-- css -->
+  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- swiper 슬라이드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 스크롤 애니메이션 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- // css -->
+
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="ui.js"></script>
+  
+  <!-- 스크롤시 애니메이션 효과 페이드인 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 스크롤시 패럴렉스 애니메이션 효과(서브페이지 타이틀) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- swiper 슬라이드 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- // script -->
+  
+  <title>portfolio</title>
+</head>
+<body>
+	<!-- skipNavi -->
+	<ul id="skipNavi">
+		<li><a href="#gnbWrap">메뉴 바로가기</a></li>
+    <li><a href="#contents">본문 바로가기</a></li>
+    <li><a href="#footerWrap">하단 바로가기</a></li>
+	</ul>
+	<!-- // skipNavi -->
+
+	<!-- wrap -->
+	<div id="wrap">
+		
+		<!-- headerWrap -->
+    <header id="headerWrap" class="main">
+      <div class="header-inner">
+        <h1>My portfolio</h1>
+      </div>
+    </header>
+    <!-- //e:headerWrap -->
+		  
+    <!-- s:contentsWrap -->
+    <div id="contentsWrap">
+      <!-- s:visual-wrap -->
+      <div class="visual-wrap has-image">
+        <div class="img-wrap" style="background-image: url('hero_bg.jpg');"></div>
+        <div class="title-wrap before">
+          <h5>This is</h5>
+          <h1>My portfolio</h1>
+        </div>
+        <div class="title-wrap after">
+          <h5>This is</h5>
+          <h1>My portfolio</h1>
+        </div>
+      </div>
+      <!-- //e:visual-wrap -->
+
+      <!-- s:contents -->
+      <div id="contents" class="contents pt180 pb180">
+        <div id="contents-inner">
+          <div class="default-wrap medium">
+            <p class="light font30 ta-c" data-aos="fade-up" data-aos-duration="1000">
+              배움의 자세를 잃지 않고<br />
+              정직, 성실, 화합을 핵심가치로 삼아<br />
+              기업의 발전을 위해 솔선수범합니다.
+            </p>
+          </div>
+       
+          <div class="default-wrap medium mt100">
+            <ul class="wb-ka sample_list" data-aos="fade-up" data-aos-duration="1000">
+              <li data-aos="fade-up" data-aos-duration="1000">
+                <div class="sample_box">
+                  <strong class="sample_name">SAMPLE 1</strong>
+                  <p class="sample_address">포트폴리오1</p>
+                  <a href="company/index.html" class="sample_link" target="_blank">바로가기</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //e:contents -->
+    </div>
+      <!-- //e:contentsWrap -->
+
+    <!-- footerWrap -->
+    <div id="quickWrap">
+        <button class="top-btn" title="top"><span>TOP</span></button>
+    </div>
+
+    <!-- footerWrap -->
+    <footer id="footerWrap" class="full-area">
+        <div class="footer-wrap">
+            <div class="default-wrap">
+                <div class="footer-txt">
+                    <address>서울특별시 로렘구 입숨n길 nn nn타워 n동 nn층 TEL : 02-0000-0000</address>
+                    <div class="copy">COPYRIGHT © 2024 (name) ALL RIGHTS RESERVED.</div>
+                    <div class="copy mt5">Designed by <a href="https://www.freepik.com">www.freepik.com</a></div>
+                    <div class="copy">
+                        <a href="https://www.freepik.com/icon/battery_8454797#fromView=search&term=battery&page=5&position=89&track=ais" target="_blank">Icon by kerismaker</a>
+                        / <a href="https://www.freepik.com/icon/globe_4116480#fromView=search&term=browser&page=1&position=69&track=ais?sign-up=google" target="_blank">Icon by Smashicons</a>
+                        / <a href="https://www.freepik.com/icon/user-interface_2920339#fromView=search&term=app&page=2&position=86&track=ais?log-in=google">Icon by Freepik</a>
+                        / <a href="https://www.freepik.com/icon/audio-book_5558912#fromView=search&term=headphone&page=1&position=5&track=ais">Icon by Freepik</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //e:footerWrap -->
+
+		</div>
+	</div>
+	<!-- //e:wrap -->
+
+  <script type="text/javascript">
+    // visual-wrap    
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.create({
+        trigger: ".visual-wrap.has-image",
+        pin: ".visual-wrap.has-image",
+        start: "top top",
+        end: "+=700",
+    });
+
+    // visual-wrap background image zoom
+    var tl = new gsap.timeline();
+    tl.to('.visual-wrap.has-image .img-wrap', {
+        scale: 1.3,
+        scrollTrigger: {
+            trigger: ".visual-wrap.has-image .img-wrap",
+            start: "top top",
+            end: "+=2000",
+            scrub: 0.7,
+        }
+    });
+
+    // visual-wrap.before
+    tl.to(".visual-wrap.has-image .title-wrap.after", {
+        clipPath: "polygon(0 0, 100% 0, 100% 0%, 0% 0%)",
+        scrollTrigger: {
+            trigger: ".visual-wrap.has-image .title-wrap.after",
+            start: "top top",
+            end: "+=500",
+            scrub: 0.7,
+        }
+    });
+
+    // 타이틀 bottom 조절
+    ScrollTrigger.matchMedia({
+        "(max-height: 500px)": function () {
+            tl.to(".visual-wrap.has-image .sub-title", {
+                bottom: 50,
+                scrollTrigger: {
+                    trigger: ".visual-wrap.has-image .title-wrap.after",
+                    start: "top top",
+                    end: "+=500",
+                    scrub: 0.7,
+                }
+            });
+        },
+
+        "(min-height: 501px)": function () {
+            tl.to(".visual-wrap.has-image .sub-title", {
+                bottom: 120,
+                scrollTrigger: {
+                    trigger: ".visual-wrap.has-image .title-wrap.after",
+                    start: "top top",
+                    end: "+=500",
+                    scrub: 0.7,
+                }
+            });
+        },
+    });
+    // e:visual-wrap
+  
+
+    // 텍스트 페이드인 애니메이션
+    AOS.init();
+  </script>
+</body>
+</html>

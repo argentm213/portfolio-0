@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta name="keywords" content="포트폴리오">
+  <meta name="description" content="포트폴리오"/>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="포트폴리오">
+  <meta property="og:description" content="포트폴리오">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="포트폴리오">
+  <meta property="og:locale" content="ko">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/content.css">
+
+  <!-- swiper 슬라이드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 스크롤 애니메이션 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- // css -->
+
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="js/ui.js"></script>
+  <!-- 스크롤시 애니메이션 효과 페이드인 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 스크롤시 패럴렉스 애니메이션 효과(서브페이지 타이틀) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- swiper 슬라이드 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- // script -->
+  
+  <title>portfolio</title>
+</head>
+<body>
+	<!-- skipNavi -->
+	<ul id="skipNavi">
+		<li><a href="#gnbWrap">메뉴 바로가기</a></li>
+    <li><a href="#contents">본문 바로가기</a></li>
+    <li><a href="#footerWrap">하단 바로가기</a></li>
+	</ul>
+	<!-- // skipNavi -->
+
+	<!-- wrap -->
+	<div id="wrap">
+		
+		<!-- headerWrap -->
+    <header id="headerWrap" class="main">
+      <div class="header-inner">
+        <a href="index.html" title="로고" class="logo"><span class="blind">로고</span></a>
+        <nav class="gnb-menu" id="gnbWrap">
+            <ul class="depth-1">
+                <li>
+                    <a href="intro.html" title="회사소개" class="depth-1-menu depth_1_toggle">회사소개</a>
+                    <ul class="depth-2">
+                      <li><a href="intro.html" title="회사소개">회사소개</a></li>
+                      <li><a href="business.html" title="사업장">사업장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ethic.html" title="윤리경영" class="depth-1-menu depth_1_toggle">윤리경영</a>
+                    <ul class="depth-2">
+                        <li><a href="ethic.html" title="윤리경영">윤리경영</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="product.html" title="제품 정보" class="depth-1-menu depth_1_toggle">제품 정보</a>
+                    <ul class="depth-2">
+                      <li><a href="product.html" title="제품정보">제품정보</a></li>
+                      <li><a href="product.html" title="서브페이지">서브페이지</a></li>
+                      <li><a href="product.html" title="서브페이지">서브페이지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="news.html" title="뉴스" class="depth-1-menu">뉴스</a>
+                    <ul class="depth-2">
+                        <li><a href="news.html" title="뉴스">뉴스</a></li>
+                    </ul>
+                </li>
+               <li>
+                    <a href="contact.html" title="문의하기" class="depth-1-menu">문의하기</a>
+                    <ul class="depth-2">
+                        <li><a href="문의하기" title="문의하기">문의하기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="right-wrap">
+            <a href="contact.html" title="문의하기" class="btn xs white radius contact">문의하기</a>
+            <button class="btn-burger">
+                <span class="line"></span>
+            </button>
+        </div>
+    </div>
+    </header>
+    <!-- //e:headerWrap -->
+		  
+    <!-- s:contentsWrap -->
+    <div id="contentsWrap">
+      <!-- s:visual-wrap -->
+      <div class="visual-wrap has-image">
+        <div class="img-wrap" style="background-image: url('./images/sub/photo_07.jpg');"></div>
+        <div class="title-wrap before">
+          <h5>About Us</h5>
+          <h1>Business Sites</h1>      
+        </div>
+        <div class="title-wrap after">
+          <h5>About Us</h5>
+          <h1>Business Sites</h1>
+        </div>
+        <span class="sub-title">사업장 소개</span>
+      </div>
+      <!-- //e:visual-wrap -->
+
+      <!-- s:contents -->
+      <div id="contents" class="contents pt180 pb180">
+        <div id="contents1-3">
+          <div class="default-wrap medium">
+            <p class="light font36 wb-ka ta-c" data-aos="fade-up" data-aos-duration="1000">MIT License. 매사추세츠 공과대학교에서 개발한 소프트웨어의 라이선스로 BSD 라이선스에 기반하고 있다.</p>
+          </div>
+       
+          <div class="default-wrap medium mt150">
+            <ul class="wb-ka chain_list" data-aos="fade-up" data-aos-duration="1000">
+              <li data-aos="fade-up" data-aos-duration="1000">
+                <div class="chain_box">
+                  <strong class="chain_name">본사</strong>
+                  <p class="chain_address">서울특별시 로렘구 입숨5길 50 시트아멧타워 7층 707호 서울특별시 로렘구 입숨5길 50 시트아멧타워 7층 707호</p>
+                  <span class="chain_tel">TEL : 02-0000-0000</span>
+                  <a href="https://map.naver.com/" class="chain_link" target="_blank">지도보기</a>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1000">
+                <div class="chain_box">
+                  <strong class="chain_name">지점2</strong>
+                  <p class="chain_address">서울특별시 로렘구 입숨5길 50 시트아멧타워 7층 707호</p>
+                  <span class="chain_tel">TEL : 02-0000-0000</span>
+                  <a href="https://map.naver.com/" class="chain_link" target="_blank">지도보기</a>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1000">
+                <div class="chain_box">
+                  <strong class="chain_name">지점3</strong>
+                  <p class="chain_address">서울특별시 로렘구 입숨5길 50 시트아멧타워 7층 707호</p>
+                  <span class="chain_tel">TEL : 02-0000-0000</span>
+                  <a href="https://map.naver.com/" class="chain_link" target="_blank">지도보기</a>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1000">
+                <div class="chain_box">
+                  <strong class="chain_name">지점4</strong>
+                  <p class="chain_address">서울특별시 로렘구 입숨5길 50 시트아멧타워 7층 707호</p>
+                  <span class="chain_tel">TEL : 02-0000-0000</span>
+                  <a href="https://map.naver.com/" class="chain_link" target="_blank">지도보기</a>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1000">
+                <div class="chain_box">
+                  <strong class="chain_name">지점5</strong>
+                  <p class="chain_address">서울특별시 로렘구 입숨5길 50 시트아멧타워 7층 707호</p>
+                  <span class="chain_tel">TEL : 02-0000-0000</span>
+                  <a href="https://map.naver.com/" class="chain_link" target="_blank">지도보기</a>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1000">
+                <div class="chain_box">
+                  <strong class="chain_name">지점6</strong>
+                  <p class="chain_address">서울특별시 로렘구 입숨5길 50 시트아멧타워 7층 707호</p>
+                  <span class="chain_tel">TEL : 02-0000-0000</span>
+                  <a href="https://map.naver.com/" class="chain_link" target="_blank">지도보기</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //e:contents -->
+    </div>
+      <!-- //e:contentsWrap -->
+
+    <!-- footerWrap -->
+    <div id="footer_inc">
+      <div id="quickWrap">
+        <button class="top-btn" title="top"><span>TOP</span></button>
+    </div>
+    
+    <!-- footerWrap -->
+    <footer id="footerWrap" class="full-area">
+        <div class="footer-wrap">
+            <div class="default-wrap">
+                <div class="site-map">
+                    <ul class="of-hi">
+                        <li>
+                            <a href="intro.html" title="회사소개">회사소개</a>
+                            <ul>
+                                <li><a href="intro.html" title="회사소개">회사소개</a></li>
+                                <li><a href="business.html" title="사업장">사업장</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="ethic.html" title="윤리경영">윤리경영</a>
+                        </li>
+                        <li>
+                            <a href="product.html" title="제품정보">제품정보</a>
+                        </li>
+                        <li>
+                            <a href="news.html" title="뉴스">뉴스</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" title="문의하기">문의하기</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-txt">
+                    <div class="privacy"><a href="javascript:openPopup('Privacy')" title="개인정보보호정책">개인정보보호정책</a></div>
+                    <div class="select">
+                        <a href="#" title="패밀리 사이트">패밀리 사이트</a>
+                        <ul>
+                            <li><a href="" target="_blank" title="">패밀리사이트</a></li>
+                            <li><a href="" target="_blank" title="">패밀리사이트2</a></li>
+                            <li><a href="" target="_blank" title="">패밀리사이트3</a></li>
+                            <li><a href="" target="_blank" title="">패밀리사이트4</a></li>
+                            <li><a href="" target="_blank" title="">패밀리사이트5</a></li>
+                        </ul>
+                    </div>
+                    <address>서울특별시 로렘구 입숨n길 nn nn타워 n동 nn층 TEL : 02-0000-0000</address>
+                    <div class="copy">COPYRIGHT © 2022 (company name) ALL RIGHTS RESERVED.</div>
+                    <div class="copy mt5">Designed by <a href="https://www.freepik.com">www.freepik.com</a></div>
+                    <div class="copy">
+                        <a href="https://www.freepik.com/icon/battery_8454797#fromView=search&term=battery&page=5&position=89&track=ais" target="_blank">Icon by kerismaker</a>
+                        / <a href="https://www.freepik.com/icon/globe_4116480#fromView=search&term=browser&page=1&position=69&track=ais?sign-up=google" target="_blank">Icon by Smashicons</a>
+                        / <a href="https://www.freepik.com/icon/user-interface_2920339#fromView=search&term=app&page=2&position=86&track=ais?log-in=google">Icon by Freepik</a>
+                        / <a href="https://www.freepik.com/icon/audio-book_5558912#fromView=search&term=headphone&page=1&position=5&track=ais">Icon by Freepik</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //e:footerWrap -->
+    
+    <!-- 팝업 -->
+    <!-- 개인정보처리방침 -->
+    <div class="layer-popup" id="Privacy">
+      <!-- pop-top -->
+      <div class="pop-top">
+        <p class="tit">개인정보처리방침</p>
+        <button class="btn pop-close">
+            <span></span>
+            <span></span>
+        </button>
+      </div>
+      <!-- // pop-top -->
+      <!-- pop-con -->
+      <div class="pop-con">
+        <div class="scroll-box">
+          <p>
+              (주)Lorem Ipsum의 개인정보처리방침은 다음과 같습니다.<br/>
+              시행일자 2015-07-01<br/><br/>
+    
+              (주)Lorem Ipsum은 (이하 '회사'는) 고객의 개인정보를 중요시하며, 「정보통신망 이용촉진 및 정보보호에 관한 법률」을 준수하고 있습니다. 회사는 개인정보처리방침을 통하여 고객이 제공하시는 개인정보가 어떠한 방식과 용도로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.<br/>
+              ※ 본 방침은 20YY년 MM월 DD일부터 시행됩니다.
+          </p>
+          <p>
+              <strong>1. 개인정보 처리방침 조항</strong>
+              뭇 목숨이 부패를 길지 착목한는 보라. 그들의 같은 구하지 말이다. 이상은 구할 옷을 칼이다.<br/>
+              * 한글입숨 : 창공에 뜨거운지라, 이상의 그리하였는가? 구하지 얼마나 발휘하기 별과 있는 유소년에게서 말이다.<br/>
+              * 청춘예찬 : 용감하고 같으며, 공자는 쓸쓸한 그들에게 하는 사람은 이것이다.
+          </p>
+          <p>
+              <strong>2. 개인정보 처리방침 조항</strong>
+              과실이 우리 위하여서 청춘의 같이, 못할 거선의 천자만홍이 피다. 청춘이 실현에 그것은 사랑의 가는 불러 든 풍부하게 인류의 이것이다. 설레는 커다란 곳이 가치를 있다. 가치를 할지라도 너의 뭇 바로 어디 것이다. 얼마나 인도하겠다는 석가는 있으랴? 그와 가치를 얼음과 할지라도 풀밭에 되는 그들의 가슴에 철환하였는가? 구하지 하는 하는 황금시대다. 방지하는 것이 내려온 열매를 풀이 인간의 되는 있을 위하여서. 우는 무엇을 예가 피가 기관과 사람은 가슴에 있음으로써 것은 봄바람이다.
+          </p>
+          <p>
+              <strong>3. 개인정보 처리방침 조항</strong>
+              이상, 만물은 커다란 행복스럽고 피가 것이다. 심장의 관현악이며, 무엇을 장식하는 가는 약동하다.<br/><br/>
+    
+              [고객서비스]<br/>
+              담당 부서 : 팬그램부<br/>
+              전화번호 : 00-0000-0000<br/>
+              이메일 :  <a href="mailto:mail@mail.com">mail@mail.com</a><br/><br/>
+    
+              [개인정보보호책임자]<br/>
+              책임자 : 김로렘<br/>
+              담당자 : 박입숨 <br/>
+              전화번호 : 00-0000-0000 <br/>
+              이메일 : <a href="mailto:mail@mail.com">mail@mail.com</a><br/><br/>
+    
+              뭇 목숨이 부패를 길지 착목한는 보라. 그들의 같은 구하지 말이다. 이상은 구할 옷을 칼이다. 창공에 뜨거운지라, 이상의 그리하였는가? 구하지 얼마나 발휘하기 별과 있는 유소년에게서 말이다. 용감하고 같으며, 공자는 쓸쓸한 그들에게 하는 사람은 이것이다. 든 하였으며, 무엇을 싸인 용감하고 옷을 산야에 오아이스도 이 이것이다. 이상, 만물은 커다란 행복스럽고 피가 것이다. 심장의 관현악이며, 무엇을 장식하는 가는 약동하다.<br/><br/>
+    
+              1. 개인정보 침해신고센터 : (국번없이) 118 <a href="http://privacy.kisa.or.kr" target="_blank" title="새창">(http://privacy.kisa.or.kr)</a><br/>
+              2. 개인정보 분쟁조정위원회 : (국번없이) 118 <a href="http://privacy.kisa.or.kr" target="_blank" title="새창">(http://privacy.kisa.or.kr)</a><br/>
+              3. 대검찰청 사이버수사과 : 02-3480-3571, <a href="mailto:cybercid@spo.go.kr">cybercid@spo.go.kr</a> <a href="http://cybercid.spo.go.kr" target="_blank" title="새창">(http://cybercid.spo.go.kr)</a><br/>
+              4. 경찰청 사이버안전국 : (국번없이) 182 <a href="http://cyberbureau.police.go.kr" target="_blank" title="새창">(http://cyberbureau.police.go.kr)</a>
+          </p>
+        </div>
+      </div>
+      <!-- // pop-con -->
+    </div>
+    <!-- //e:개인정보처리방침 -->
+    <!-- //e:팝업 -->
+    </div>
+    <!-- //e:footerWrap -->
+
+		</div>
+	</div>
+	<!-- //e:wrap -->
+
+  <script type="text/javascript">
+    // visual-wrap    
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.create({
+        trigger: ".visual-wrap.has-image",
+        pin: ".visual-wrap.has-image",
+        start: "top top",
+        end: "+=700",
+    });
+
+    // visual-wrap background image zoom
+    var tl = new gsap.timeline();
+    tl.to('.visual-wrap.has-image .img-wrap', {
+        scale: 1.3,
+        scrollTrigger: {
+            trigger: ".visual-wrap.has-image .img-wrap",
+            start: "top top",
+            end: "+=2000",
+            scrub: 0.7,
+        }
+    });
+
+    // visual-wrap.before
+    tl.to(".visual-wrap.has-image .title-wrap.after", {
+        clipPath: "polygon(0 0, 100% 0, 100% 0%, 0% 0%)",
+        scrollTrigger: {
+            trigger: ".visual-wrap.has-image .title-wrap.after",
+            start: "top top",
+            end: "+=500",
+            scrub: 0.7,
+        }
+    });
+
+    // 서브페이지 타이틀 bottom 조절
+    ScrollTrigger.matchMedia({
+        "(max-height: 500px)": function () {
+            tl.to(".visual-wrap.has-image .sub-title", {
+                bottom: 50,
+                scrollTrigger: {
+                    trigger: ".visual-wrap.has-image .title-wrap.after",
+                    start: "top top",
+                    end: "+=500",
+                    scrub: 0.7,
+                }
+            });
+        },
+
+        "(min-height: 501px)": function () {
+            tl.to(".visual-wrap.has-image .sub-title", {
+                bottom: 120,
+                scrollTrigger: {
+                    trigger: ".visual-wrap.has-image .title-wrap.after",
+                    start: "top top",
+                    end: "+=500",
+                    scrub: 0.7,
+                }
+            });
+        },
+    });
+
+    // 텍스트 페이드인 애니메이션
+    AOS.init();
+  </script>
+</body>
+</html>
